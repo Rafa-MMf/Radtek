@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Radtek</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<div id="circulo"></div>
+
+		<header>
+			<ul id="navegacao">
+				<li><a href="index.html">Página Inicial</a></li>
+				<li><a href="produtos.html">Produtos</a></li>
+				<li><a href="#">Serviços</a></li>
+				<li><a href="#">Sobre a Impresa</a></li>
+				<li><a href="#">Contato</a></li>
+			</ul>
+
+			<img src="logo.png" id="logo">
+		</header>
+
+		<div id="content">
+			<div id="img">
+				<img src="modelo1.png" id="gabinete">
+			</div>
+
+			<div id="text">
+				<h2>Conheça um novo mundo da <span>Tecnologia</span></h2>
+				<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+				<a href="produtos.html" id="botao">Ver mais</a>
+			</div>
+			
+		</div>
+
+		<ul id="selecao"> 
+			<li><img src="modelo1.png" onclick="imgClicada('modelo1.png'); Cor('#092760')"></li>
+			<li><img src="modelo2.png" onclick="imgClicada('modelo2.png'); Cor('#660000')"></li>
+			<li><img src="modelo3.png" onclick="imgClicada('modelo3.png'); Cor('#006622')"></li>
+		</ul>
+
+	</section>
+
+	<script type="text/javascript">
+		function imgClicada(anything) {
+			document.querySelector('#gabinete').src = anything;
+		}
+
+		function Cor(color){
+			const circle = document.querySelector('#circulo');
+			const span = document.querySelector('span');
+			const botao = document.querySelector('#botao');
+			circle.style.background = color;
+			span.style.color = color;
+			botao.style.background = color;
+		}
+	</script>
+
+</body>
+</html>

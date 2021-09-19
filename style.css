@@ -1,0 +1,153 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+/*Pag Inicial*/
+
+section {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background: #fff;
+}
+
+
+
+#circulo {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #092760;
+	clip-path: circle(800px at left 800px);
+}
+
+
+
+header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	padding: 20px 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header ul {
+	margin-left: 25%;
+	display: flex;
+}
+header ul li {
+	margin: 10px;
+	list-style: none;
+}
+header ul li a {
+	letter-spacing: 1px;
+	color: #333;
+	margin-left: 40px;
+	text-decoration: none;
+}
+header li:hover {
+	transform: scale(1.1);  
+}
+
+
+
+#content {
+	position: relative;
+	display: flex;
+	align-items: center;
+}
+#content #img img {
+	max-width: 800px;
+}
+#content #text {
+	max-width: 1000px;
+}
+#content #text h2 {
+	margin-left: -50px;
+	font-size: 4em;
+	font-weight: 200;
+}
+#content #text h2 span {
+	color: #092760;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+#content #text a {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 8px 20px;
+	background: #092760;
+	color: #fff;
+	border-radius: 40px;
+	letter-spacing: 1px;
+	text-decoration: none;
+}
+#content #text a:hover {
+	transform: scale(1.1);
+}
+
+
+
+#selecao {
+	position: absolute;
+	left: 75%;
+	bottom: 20px;
+	transform: translateX(-50%);
+	display: flex;
+}
+#selecao li {
+	list-style: none;
+	display: inline-block;
+	padding: 0 30px;
+	cursor: pointer;
+}
+#selecao li:hover {
+	transform: translateY(-15px);
+}
+#selecao li img {
+	max-width: 130px;
+}
+
+
+/*Pag Produtos*/
+#box {
+	margin-top: 100px;
+}
+.img {
+	width: 300px;
+}
+
+.box1 {
+	margin: 50px auto;
+	align-items: center;
+	position: relative;
+	display: flex;
+	list-style: none;
+	border-left: 10px solid #092760;
+	background-color: rgba(9, 39, 96, 0.2);
+}
+
+.box2 {
+	margin: 50px auto;
+	align-items: center;
+	position: relative;
+	display: flex;
+	list-style: none;
+	border-right: 10px solid #660000;
+	background-color: rgba(102, 0, 0, 0.2);
+}
+
+.box3 {
+	margin: 50px auto;
+	align-items: center;
+	position: relative;
+	display: flex;
+	list-style: none;
+	border-left: 10px solid #006622;
+	background-color: rgba(0, 102, 34, 0.2);
+}
